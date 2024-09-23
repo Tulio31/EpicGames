@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resident Evil 4 Remake - Phoenix Store</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/product-page.css">
+    <link rel="stylesheet" href="../css/modal.css"> <!-- Aquí agregas el enlace al CSS del modal -->
+    <script src="../js/purchase.js" defer></script>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <div class="logo">Phoenix Store</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../games.html">Tienda</a></li>
+            <li><a href="../offers.html">Ofertas</a></li>
+            <li><a href="../support.html">Soporte</a></li>
+            <li><a href="../library.html">Biblioteca</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal del producto -->
+    <main class="product-page">
+        <div class="product-container">
+            <div class="video-container">
+                <iframe width="650" height="360" src="https://www.youtube.com/embed/-ADnQpNxSu4" title="Resident Evil 4 Remake Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="product-details">
+                <h1>Resident Evil 4 Remake</h1>
+                <p class="product-description">Revive el clásico juego de survival horror con gráficos renovados, mecánicas de juego mejoradas y una historia que te sumergirá en un mundo de terror y supervivencia.</p>
+                <p><strong>Desarrollador:</strong> Capcom</p>
+                <p><strong>Género:</strong> Acción, Aventura, Terror</p>
+                <p><strong>Plataforma:</strong> PC, PlayStation 5, Xbox Series X</p>
+                <p><strong>Fecha de lanzamiento:</strong> 24 de marzo de 2023</p>
+                <div class="price-section">
+                    <p class="price">$59.99</p>
+                    <div class="buttons">
+                        <button id="buy-btn" class="buy-now-btn">Comprar ahora</button>
+                    </div>
+                </div>
+                <p id="thank-you-message" style="display: none;">Gracias por la compra. El juego ha sido añadido a tu biblioteca.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2024 Phoenix Store. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../privacy-policy.html">Política de privacidad</a></li>
+                    <li><a href="../terms-and-conditions.html">Términos y condiciones</a></li>
+                    <li><a href="../contact.html">Contacto</a></li>
+                    <li><a href="../about.html">Acerca de nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <p>Síguenos en nuestras redes sociales:</p>
+                <ul>
+                    <li><a href="#"><img src="../img/facebook-icon.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="../img/twitter-icon.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="../img/instagram-icon.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de compra -->
+    <div id="purchase-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Formulario de Compra</h2>
+            <form id="purchase-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="payment">Método de pago:</label>
+                <select id="payment" name="payment" required>
+                    <option value="paypal">PayPal</option>
+                    <option value="credit-card">Tarjeta de crédito</option>
+                </select>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="form-message" style="display: none;">Gracias por la compra. El juego ha sido añadido a tu biblioteca.</p>
+        </div>
+    </div>
+</body>
+</html>

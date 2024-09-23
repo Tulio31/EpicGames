@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Juegos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <div class="logo">Phoenix Store</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Tienda</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Soporte</a></li>
+			<li><a href="library.html">Biblioteca</a></li>
+        </ul>
+    </nav>
+
+    <!-- Slider de juegos destacados -->
+    <div class="slider">
+        <div class="slide active" style="background-image: url('img/destacado1.jpg')">
+            <div class="game-info">
+                <h1>Juego Destacado 1</h1>
+                <p>Descripción breve del juego 1.</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('img/destacado2.jpg')">
+            <div class="game-info">
+                <h1>Juego Destacado 2</h1>
+                <p>Descripción breve del juego 2.</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('img/destacado3.jpg')">
+            <div class="game-info">
+                <h1>Juego Destacado 3</h1>
+                <p>Descripción breve del juego 3.</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <!-- Sección de juegos populares -->
+    <div class="games-section">
+        <h2>Juegos Populares</h2>
+        <div class="games-grid">
+            <div class="game-card" onclick="window.location.href='games/resident-evil-4.html'">
+                <img src="img/game1.jpg" alt="Juego 1">
+                <h3>Juego 1</h3>
+                <p>$29.99</p>
+            </div>
+            <div class="game-card" onclick="window.location.href='games/grand-theft-auto-v.html'">
+                <img src="img/game2.jpg" alt="Juego 2">
+                <h3>Juego 2</h3>
+                <p>$19.99</p>
+            </div>
+            <div class="game-card" onclick="window.location.href='game3.html'">
+                <img src="img/game3.jpg" alt="Juego 3">
+                <h3>Juego 3</h3>
+                <p>$49.99</p>
+            </div>
+            <div class="game-card" onclick="window.location.href='game4.html'">
+                <img src="img/game4.jpg" alt="Juego 4">
+                <h3>Juego 4</h3>
+                <p>$24.99</p>
+            </div>
+            <div class="game-card" onclick="window.location.href='game5.html'">
+                <img src="img/game5.jpg" alt="Juego 5">
+                <h3>Juego 5</h3>
+                <p>$34.99</p>
+            </div>
+            <div class="game-card" onclick="window.location.href='games/starcraft-2.html'">
+                <img src="img/game6.jpg" alt="Juego 6">
+                <h3>Juego 6</h3>
+                <p>$39.99</p>
+            </div>
+            <div class="game-card" onclick="window.location.href='game7.html'">
+                <img src="img/game7.jpg" alt="Juego 7">
+                <h3>Juego 7</h3>
+                <p>$19.99</p>
+            </div>
+            <div class="game-card" onclick="window.location.href='game8.html'">
+                <img src="img/game8.jpg" alt="Juego 8">
+                <h3>Juego 8</h3>
+                <p>$44.99</p>
+            </div>
+            <div class="game-card" onclick="window.location.href='game9.html'">
+                <img src="img/game9.jpg" alt="Juego 9">
+                <h3>Juego 9</h3>
+                <p>$59.99</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2024 Phoenix Store. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="privacy-policy.html">Política de privacidad</a></li>
+                    <li><a href="terms-and-conditions.html">Términos y condiciones</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="about.html">Acerca de nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <p>Síguenos en nuestras redes sociales:</p>
+                <ul>
+                    <li><a href="#"><img src="img/facebook-icon.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="img/twitter-icon.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="img/instagram-icon.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

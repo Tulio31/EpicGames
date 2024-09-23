@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra - Phoenix Store</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/purchase.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <div class="logo">Phoenix Store</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="#">Tienda</a></li>
+            <li><a href="../library.html">Biblioteca</a></li>
+            <li><a href="../contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal de la compra -->
+    <main class="purchase-page">
+        <div class="purchase-container">
+            <h1>Compra de Resident Evil 4 Remake</h1>
+            <form id="purchase-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Dirección de envío:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="payment">Método de pago:</label>
+                <select id="payment" name="payment" required>
+                    <option value="credit-card">Tarjeta de crédito</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank-transfer">Transferencia bancaria</option>
+                </select>
+
+                <button type="submit" id="submit-btn">Realizar compra</button>
+            </form>
+
+            <div id="thank-you-message" style="display:none;">
+                <h2>¡Gracias por tu compra!</h2>
+                <p>Tu compra ha sido realizada con éxito. Ahora puedes ver el juego en tu biblioteca.</p>
+                <a href="../library.html">Ir a la biblioteca</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2024 Phoenix Store. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../privacy-policy.html">Política de privacidad</a></li>
+                    <li><a href="../terms-and-conditions.html">Términos y condiciones</a></li>
+                    <li><a href="../contact.html">Contacto</a></li>
+                    <li><a href="../about.html">Acerca de nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <p>Síguenos en nuestras redes sociales:</p>
+                <ul>
+                    <li><a href="#"><img src="../img/facebook-icon.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="../img/twitter-icon.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="../img/instagram-icon.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/purchase.js"></script>
+</body>
+</html>
